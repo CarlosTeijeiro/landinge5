@@ -1,0 +1,625 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    background-color: rgba(105, 105, 104, 1);
+}
+
+header{
+    background-color: #333;
+    width: 100%;
+    margin: 0 auto;
+    border-bottom: 2px solid rgba(168, 150, 118, 1);
+    /* position: sticky; */
+    top: 0px;
+    z-index: 100;
+}
+
+header .contenedor img{
+    height: 150px;
+}
+
+header a{
+    color: rgba(168, 150, 118, 1) ;
+    text-decoration: none;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: 1,3rem;
+}
+
+.contenedor{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+}
+
+.navegador{
+    display: flex;
+    z-index: 100;
+}
+.navegador ul{
+    margin: 0 30px;
+    list-style: none;
+    display: flex;
+    justify-content: space-around;
+    align-items: stretch;
+}
+
+.navegador ul li a {
+    margin: 0 15px;
+    padding: 10px 10px;
+    transition: all 0.6s linear;
+    border-radius: 5px;
+    display: block;
+}
+
+.navegador ul li a:hover {
+    background-color:rgba(168, 150, 118, 1);
+    color: black;
+}
+
+.nav_label {
+    color: rgba(168, 150, 118, 1);
+    font-size: 40px;
+}
+
+.nav_label, .nav_input{
+    display: none;
+}
+
+input:checked ~ .navegador ul{
+    background-color:#333;
+    flex-direction: column;
+    border-bottom-right-radius: 10px;
+    border-bottom-left-radius: 10px;
+}
+
+input:checked ~ .navegador ul li{
+    text-align: center;
+}
+
+input:checked ~ .navegador{ 
+    display: block;
+    position: absolute;
+    top: 150px;
+    width: 100%;  
+    /* z-index: 100;   */
+}
+
+.banner{
+    background-image: url(./Img/geeks-gce4a3df10_1920.jpg);
+    background-size: cover;
+    height: 900px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    color: white;
+}
+
+section .contbien{
+    height: 50%;
+    display: flex;
+    justify-content: right;
+    font-size: 20px;
+}
+
+section .bienvenida{
+    width: 50%;
+    height: 100%;
+    text-align: center;
+    margin-right: 100px;
+    font-size: 24px;
+}
+
+section .bienvenida h2{
+    margin-top: 50px;
+    margin-bottom: 50px;
+}
+
+section .info{
+    height: 50%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+section .info div{
+    text-align: center;
+    margin: auto;
+    padding: 30px ;
+    height: 50%;
+    font-size: 20px;
+    width: 310px;
+    background-color: #333;
+    border-radius: 10px;
+    border: rgba(168, 150, 118, 1) 2px solid;
+    color: rgba(168, 150, 118, 1);
+}
+
+section .info div h3{
+    margin-bottom: 10px;
+}
+
+section .info .i1:hover {
+    transform: scale(1.1);
+    transition: 1s;
+    cursor: pointer;
+}
+
+
+.nosotros{
+    background-color: rgba(144, 99, 64, 1);
+    border-top: #333 solid 5px;
+    border-bottom: #333 solid 5px;
+    text-align: center;
+    padding: 40px 100px;
+}
+
+.nosotros h2{
+    text-align: center;
+    padding-bottom: 20px;
+    font-size: 3rem;
+}
+
+.nosotros p{
+    line-height: 50px;
+    font-size: 1.5rem;
+}
+
+/* Nuestros servicios */
+
+.servicios{
+    width: 80%;
+    margin: 0px auto;
+    text-align: center;
+}
+
+.servicios h2{
+    padding: 30px;
+    color: white;
+    font-size: 3rem;
+}
+
+.jubilacion{
+    display: flex;
+    background-color: white;
+}
+
+.imagen-jubilacion{
+    width: 50%;
+    display: flex;
+    align-items: center;
+}
+
+.imagen-jubilacion img{
+    max-width: 100%;
+}
+
+.texto-jubilacion{
+    font-size: 20px;
+    text-align: left;
+    width: 50%;
+    padding: 20px 30px;
+    color: #333;
+}
+
+.texto-jubilacion h3{
+    padding: 15px 0;
+    font-size: 1.8rem;
+}
+
+.especiales{
+    display: flex;
+    background-color: white;
+}
+
+.imagen-especiales{
+    width: 50%;
+    display: flex;
+    align-items: center;
+}
+
+.imagen-especiales img{
+    max-width: 100%;
+}
+
+.texto-especiales{
+    font-size: 20px;
+    text-align: left;
+    width: 50%;
+    padding: 20px 30px;
+    color: #333;
+}
+
+.texto-especiales h3{
+    padding: 15px 0;
+    font-size: 1.8rem;
+}
+
+.reajuste{
+    display: flex;
+    background-color: white;
+}
+
+.imagen-reajuste{
+    width: 50%;
+    display: flex;
+    align-items: center;
+}
+
+.imagen-reajuste img{
+    max-width: 100%;
+}
+
+.texto-reajuste{
+    font-size: 20px;
+    text-align: left;
+    width: 50%;
+    padding: 20px 30px;
+    color: #333;
+}
+
+.texto-reajuste h3{
+    padding: 15px 0;
+    font-size: 1.8rem;
+}
+
+/* clientes */
+
+.clientes {
+    width: 80%;
+    margin: 50px auto;
+    background-color: white;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+.intro-clientes {
+    text-align: center;
+}
+
+.intro-clientes h2{
+    padding: 30px;
+    color: black;
+    font-size: 3rem;
+}
+
+.intro-clientes p{
+        font-size: 20px;
+        text-align: left;
+        padding: 20px 50px;
+        color: #333;        
+    }
+
+    /* jubilado 1 */
+
+.info-jub1 {
+    width: 200px;
+    height: 200px;
+    text-align: center;
+}
+
+.img-jub1 {
+    width: 180px;
+    height: 180px;
+    overflow: hidden;
+    margin: 0 auto;
+    position: relative;
+    border-radius: 50%;
+    border: rgb(197, 184, 162) double 1px;
+
+}
+
+.img-jub1 > .img1 {
+    width: 100%;
+    position: absolute;
+    left: -100%;
+    right: -100%;
+    top: -100%;
+    bottom: -100%;
+    margin:auto;
+    min-height: 100%;
+    min-width: 100%;
+}
+
+.opinion-jub1 {
+    width: 80%;
+    height: 200px;
+    padding: 20px;
+    border-radius: 20px;
+    background-color: rgb(197, 184, 162);
+    font-size: 18px;
+}
+
+.jubilado1 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 30px;
+}
+
+/* jubilado 2 */
+
+.info-jub2 {
+    width: 200px;
+    height: 200px;
+    text-align: center;
+}
+
+.img-jub2 {
+    width: 180px;
+    height: 180px;
+    overflow: hidden;
+    margin: 0 auto;
+    position: relative;
+    border-radius: 50%;
+    border: rgb(197, 184, 162) double 1px;
+
+}
+
+.img-jub2 > .img2 {
+    width: 100%;
+    position: absolute;
+    left: -100%;
+    right: -100%;
+    top: -100%;
+    bottom: -100%;
+    margin:auto;
+    min-height: 100%;
+    min-width: 100%;
+}
+
+.opinion-jub2 {
+    width: 80%;
+    height: 200px;
+    padding: 20px;
+    border-radius: 20px;
+    background-color: rgb(197, 184, 162);
+    font-size: 18px;
+}
+
+.jubilado2 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 30px;
+}
+
+/* jubilado 3 */
+
+.info-jub3 {
+    width: 200px;
+    height: 200px;
+    text-align: center;
+}
+
+.img-jub3 {
+    width: 180px;
+    height: 180px;
+    overflow: hidden;
+    margin: 0 auto;
+    position: relative;
+    border-radius: 50%;
+    border: rgb(197, 184, 162) double 1px;
+
+}
+
+.img-jub3 > .img3 {
+    width: 100%;
+    position: absolute;
+    left: -100%;
+    right: -100%;
+    top: -100%;
+    bottom: -100%;
+    margin:auto;
+    min-height: 100%;
+    min-width: 100%;
+}
+
+.opinion-jub3 {
+    width: 80%;
+    height: 200px;
+    padding: 20px;
+    border-radius: 20px;
+    background-color: rgb(197, 184, 162);
+    font-size: 18px;
+}
+
+.jubilado3 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 30px;
+}
+
+/* contacto */
+
+.contacto {
+    color: white;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: 15px;
+    display: flex;
+    width: 80%;
+    margin: 0 auto;
+    /* border: solid 2px red; */
+    justify-content: space-between;
+    text-align: center;
+}
+
+.contacto h2 {
+    font-size: 2rem;
+}
+
+.datos {
+    width: 60%;
+    /* border: green solid 2px; */
+}
+
+.mapa {
+    width: 40%;
+    text-align: center;
+    /* border: yellow solid 2px; */
+    padding: 40px;
+    overflow: hidden;
+    /* border-radius: 10px; */
+}
+
+.datos div {
+    /* border: solid orange 2px; */
+    padding: 10px 0;
+    text-align: center;
+}
+
+.redes{
+    background-color: rgba(168, 150, 118, 1);
+    color: black;
+    border-radius: 20px;
+    margin-bottom: 10px;
+}
+
+.logos-redes {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 10px;
+}
+
+.logos-redes img {
+    width: 40px;
+    transition: all .3s ease;
+    /* border-radius: 50%; */
+}
+
+.logos-redes img:hover {
+    /* background-color: white; */
+    /* color: blue; */
+    transform: scale(1.2);
+    cursor: pointer;
+}
+
+/* footer */
+
+footer {
+    height: 130px;
+    background-color: #333;
+    /* border: solid 2px red; */
+    border-top: 3px solid rgba(168, 150, 118, 1) ;
+    text-align: center;
+    margin-top: 10px;
+    overflow: hidden;
+}
+
+footer img {
+    width: 145px;
+    position: relative;
+    /* left: -100%;
+    right: -100%;
+    top: -100%;
+    bottom: -100%; */
+    /* margin:auto; */
+    /* min-height: 100%;
+    min-width: 100%; */
+    /* border: 2px solid  green; */
+}
+
+/* medias */
+
+@media (max-width: 1273px) { 
+        section .contbien{
+        justify-content: center;   
+    }
+section .bienvenida{
+    width:  100%;
+    margin: 0 20px 0 20px;
+    }
+
+    .jubilacion ,.especiales, .reajuste{
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .imagen-reajuste, .imagen-jubilacion, .imagen-especiales,.texto-jubilacion, .texto-especiales, .texto-reajuste{
+        width: 100%;
+    }
+
+    .especiales{
+        flex-direction: column-reverse;
+    }
+
+    .jubilado1, .jubilado2, .jubilado3 {
+        flex-direction: column;
+        padding: 10px;
+    } 
+
+    .opinion-jub1, .opinion-jub2, .opinion-jub3 {
+        width: 100%;
+        height: auto;
+        font-size: 16px;
+    }
+
+    .img-jub1, .img-jub2, .img-jub3 {
+        width: 100px;
+        height: 100px;
+    }
+
+    .info-jub1, .info-jub2, .info-jub3 {
+        /* width: auto; */
+        height: auto;
+        font-size: 14px;
+    }
+
+    .contacto{
+        flex-direction: column;
+        /* width: 100%; */
+        /* margin: 0 auto; */
+    }
+    .datos {
+        width: 100%;
+    }
+
+    .mapa {
+        width: 100%;
+        padding: 0;
+
+    }
+
+    
+}
+
+@media (max-width: 950px){
+    section .info{
+        flex-direction: column;
+    }
+    section .info div{
+        width: 90%;
+        height: 30%;
+    }
+}
+@media (max-width: 820px) {
+    section .bienvenida{
+    font-size: 20px;
+    }
+    section .info div{
+        font-size: 15px;
+    }
+    section .bienvenida h2{
+        margin-top: 10px;
+        margin-bottom: 10px;
+    }
+    .nav_label{
+        display: block;
+        padding: 50px;
+        cursor: pointer;
+    }
+    .navegador {
+        display: none;
+    }
+    .nosotros{
+        padding: 20px 50px;
+        }
+    .nosotros h2{
+        padding-bottom: 10px ;
+    }
+    .nosotros p{
+        line-height: 30px;
+        font-size: 1.3rem;
+    }
+}
