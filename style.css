@@ -90,6 +90,7 @@ input:checked ~ .navegador{
 
 .whatsapp {
     position: fixed;
+    border-radius: 50%;
     right: 25px;
     bottom: 25px;
     z-index: 1;
