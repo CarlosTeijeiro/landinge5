@@ -88,6 +88,13 @@ input:checked ~ .navegador{
     /* z-index: 100;   */
 }
 
+.whatsapp {
+    position: fixed;
+    right: 25px;
+    bottom: 25px;
+    z-index: 1;
+}
+
 .banner{
     background-image: url(./Img/geeks-gce4a3df10_1920.jpg);
     background-size: cover;
