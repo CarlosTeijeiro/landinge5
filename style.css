@@ -292,10 +292,10 @@ section .info .i1:hover {
 }
 
 .intro-clientes p{
-        font-size: 20px;
-        text-align: left;
-        padding: 20px 50px;
-        color: #333;        
+    font-size: 20px;
+    text-align: left;
+    padding: 20px 50px;
+    color: #333;        
     }
 
     /* jubilado 1 */
@@ -314,7 +314,6 @@ section .info .i1:hover {
     position: relative;
     border-radius: 50%;
     border: rgb(197, 184, 162) double 1px;
-
 }
 
 .img-jub1 > .img1 {
@@ -361,7 +360,6 @@ section .info .i1:hover {
     position: relative;
     border-radius: 50%;
     border: rgb(197, 184, 162) double 1px;
-
 }
 
 .img-jub2 > .img2 {
@@ -408,7 +406,6 @@ section .info .i1:hover {
     position: relative;
     border-radius: 50%;
     border: rgb(197, 184, 162) double 1px;
-
 }
 
 .img-jub3 > .img3 {
@@ -448,7 +445,6 @@ section .info .i1:hover {
     display: flex;
     width: 80%;
     margin: 0 auto;
-    /* border: solid 2px red; */
     justify-content: space-between;
     text-align: center;
 }
@@ -459,20 +455,16 @@ section .info .i1:hover {
 
 .datos {
     width: 60%;
-    /* border: green solid 2px; */
 }
 
 .mapa {
     width: 40%;
     text-align: center;
-    /* border: yellow solid 2px; */
     padding: 40px;
     overflow: hidden;
-    /* border-radius: 10px; */
 }
 
 .datos div {
-    /* border: solid orange 2px; */
     padding: 10px 0;
     text-align: center;
 }
@@ -493,12 +485,9 @@ section .info .i1:hover {
 .logos-redes img {
     width: 40px;
     transition: all .3s ease;
-    /* border-radius: 50%; */
 }
 
 .logos-redes img:hover {
-    /* background-color: white; */
-    /* color: blue; */
     transform: scale(1.2);
     cursor: pointer;
 }
@@ -508,7 +497,6 @@ section .info .i1:hover {
 footer {
     height: 130px;
     background-color: #333;
-    /* border: solid 2px red; */
     border-top: 3px solid rgba(168, 150, 118, 1) ;
     text-align: center;
     margin-top: 10px;
@@ -518,14 +506,6 @@ footer {
 footer img {
     width: 145px;
     position: relative;
-    /* left: -100%;
-    right: -100%;
-    top: -100%;
-    bottom: -100%; */
-    /* margin:auto; */
-    /* min-height: 100%;
-    min-width: 100%; */
-    /* border: 2px solid  green; */
 }
 
 /* medias */
@@ -569,15 +549,12 @@ section .bienvenida{
     }
 
     .info-jub1, .info-jub2, .info-jub3 {
-        /* width: auto; */
         height: auto;
         font-size: 14px;
     }
 
     .contacto{
         flex-direction: column;
-        /* width: 100%; */
-        /* margin: 0 auto; */
     }
     .datos {
         width: 100%;
@@ -586,10 +563,7 @@ section .bienvenida{
     .mapa {
         width: 100%;
         padding: 0;
-
     }
-
-    
 }
 
 @media (max-width: 950px){
